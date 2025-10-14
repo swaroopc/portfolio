@@ -961,6 +961,29 @@ section {
         display: none;
     }
     
+    .projects-nav {
+        display: flex !important;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        background: var(--gradient);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        box-shadow: var(--shadow);
+    }
+    
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
