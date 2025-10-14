@@ -962,12 +962,13 @@ section {
     }
     
     .projects-grid {
-        flex-direction: column;
-        overflow-x: visible;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .project-card {
         min-width: auto;
+        margin: 0;
     }
     
     .contact-content {
@@ -1338,7 +1339,14 @@ section {
     }
     
     .projects-nav {
-        display: none;
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
     }
 }
 
