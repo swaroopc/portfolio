@@ -606,7 +606,10 @@ section {
     overflow: hidden;
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
 }
 
 .project-card::before {
@@ -629,6 +632,7 @@ section {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .project-header h3 {
@@ -656,12 +660,15 @@ section {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    width: 100%;
+    text-align: left;
 }
 
 .project-features {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    width: 100%;
 }
 
 .feature {
@@ -674,6 +681,12 @@ section {
 .feature i {
     color: var(--primary-color);
     width: 16px;
+}
+
+.project-btn {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    padding: 10px 20px;
 }
 
 /* Contact Section */
